@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>過夜營 2026</title>
+<meta property="og:title" content="過夜營 2026｜夏日探旅 Summer Adventure Camp">
+<meta property="og:description" content="童心毓樂探索基地 × 兩日大台北深度探索＋嘉義三天兩夜過夜營 7/13–7/17，台北出發前往烏來、嘉義、奮起湖！">
+<meta property="og:url" content="https://lalamon0701.github.io/overnight-camp-2026/">
+<meta name="description" content="童心毓樂探索基地 × 兩日大台北深度探索＋嘉義三天兩夜過夜營 7/13–7/17，台北出發前往烏來、嘉義、奮起湖！">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;900&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --indigo: #1a2744;
+    --deep-navy: #0d1b35;
+    --vermillion: #c0392b;
+    --gold: #d4a843;
+    --pale-gold: #f0d080;
+    --cream: #faf3e0;
+    --light-cream: #fdf8ef;
+    --sage: #6b8e6b;
+    --teal: #2d7a7a;
+    --cloud: #e8dcc8;
+    --red-stamp: #b5231f;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    font-family: 'Noto Serif TC', serif;
+    color: var(--indigo);
+    overflow-x: hidden;
+  }
+
+  /* ===== WASHI PAPER TEXTURE ===== */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  .page-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+  }
+
+  /* ===== HERO HEADER ===== */
+  .hero {
+    position: relative;
+    background: var(--deep-navy);
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  /* Sky gradient */
+  .hero-sky {
+    background: linear-gradient(
+      180deg,
+      #0d1b35 0%,
+      #1a3a5c 25%,
+      #2d5a7a 45%,
+      #4a8aaa 60%,
+      #7ab8c8 75%,
+      #c8dfe8 85%,
+      #e8f0e8 92%,
+      #d4c8a0 100%
+    );
+    padding: 50px 40px 0;
+    position: relative;
+    min-height: 480px;
+  }
+
+  /* Stars */
+  .stars {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 45%;
+    overflow: hidden;
+  }
+  .star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 3s infinite alternate;
+  }
+  @keyframes twinkle {
+    from { opacity: 0.3; transform: scale(1); }
+    to { opacity: 1; transform: scale(1.3); }
+  }
+
+  /* Sun */
+  .sun {
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 90px;
+  }
+  .sun-circle {
+    width: 90px;
+    height: 90px;
+    background: radial-gradient(circle, #fff5a0 0%, #ffdc40 40%, #ff8c00 80%, #c0392b 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 40px 20px rgba(255,200,0,0.35), 0 0 80px 40px rgba(255,150,0,0.15);
+    animation: pulse-sun 4s ease-in-out infinite alternate;
+  }
+  @keyframes pulse-sun {
+    from { box-shadow: 0 0 40px 20px rgba(255,200,0,0.35), 0 0 80px 40px rgba(255,150,0,0.15); }
+    to { box-shadow: 0 0 60px 30px rgba(255,200,0,0.5), 0 0 120px 60px rgba(255,150,0,0.25); }
+  }
+
+  /* Mountains */
+  .mountains {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 55%;
+  }
+
+  .mountain-svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Clouds */
+  .cloud-layer {
+    position: absolute;
+    bottom: 26%;
+    left: 0;
+    right: 0;
+    height: 80px;
+  }
+
+  .cloud {
+    position: absolute;
+    background: rgba(255,255,255,0.85);
+    border-radius: 50px;
+    animation: drift linear infinite;
+  }
+  .cloud::before, .cloud::after {
+    content: '';
+    position: absolute;
+    background: rgba(255,255,255,0.85);
+    border-radius: 50%;
+  }
+
+  @keyframes drift {
+    from { transform: translateX(-200px); }
+    to { transform: translateX(calc(100vw + 200px)); }
+  }
+
+  /* TITLE BLOCK */
+  .hero-title-block {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .hero-subtitle-top {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 13px;
+    letter-spacing: 0.4em;
+    color: var(--pale-gold);
+    margin-bottom: 8px;
+    font-weight: 300;
+  }
+
+  .hero-main-title {
+    font-family: 'Noto Serif TC', serif;
+    font-size: clamp(52px, 10vw, 88px);
+    font-weight: 900;
+    line-height: 1;
+    color: white;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    letter-spacing: 0.08em;
+    position: relative;
+    display: inline-block;
+  }
+
+  .hero-main-title span {
+    color: var(--pale-gold);
+  }
+
+  .hero-en-title {
+    font-size: 13px;
+    letter-spacing: 0.5em;
+    color: rgba(255,255,255,0.6);
+    margin-top: 6px;
+    font-weight: 300;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+
+  /* DATE BADGE */
+  .date-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    background: rgba(192,57,43,0.9);
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 8px 24px;
+    border-radius: 2px;
+  }
+  .date-badge span {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400;
+  }
+
+  /* DECORATIVE BORDER TOP */
+  .deco-border-top {
+    height: 20px;
+    background: var(--indigo);
+    position: relative;
+  }
+  .deco-border-top::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--gold) 0px, var(--gold) 8px,
+      var(--indigo) 8px, var(--indigo) 16px
+    );
+    opacity: 0.6;
+  }
+
+  /* ===== WAVE DIVIDER ===== */
+  .wave-divider {
+    background: var(--indigo);
+    padding: 0;
+    line-height: 0;
+  }
+
+  /* ===== INTRO SECTION ===== */
+  .intro-section {
+    background: var(--indigo);
+    padding: 40px 40px 50px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .intro-section::before {
+    content: '夏';
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    font-size: 200px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.03);
+    font-family: 'Noto Serif TC', serif;
+    pointer-events: none;
+  }
+
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .stamp-mark {
+    text-align: center;
+  }
+
+  .stamp-circle {
+    width: 130px;
+    height: 130px;
+    border: 3px solid var(--red-stamp);
+    border-radius: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: rotate(-8deg);
+  }
+  .stamp-circle::before {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    border: 1px solid var(--red-stamp);
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+  .stamp-circle .stamp-year {
+    color: var(--red-stamp);
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    font-weight: 600;
+  }
+  .stamp-circle .stamp-text {
+    color: var(--red-stamp);
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+  }
+
+  .intro-text h2 {
+    color: var(--pale-gold);
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+    border-bottom: 1px solid rgba(212,168,67,0.3);
+    padding-bottom: 12px;
+  }
+
+  .intro-text p {
+    color: rgba(255,255,255,0.8);
+    font-size: 15px;
+    line-height: 2;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+  }
+
+  .intro-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .tag {
+    background: rgba(212,168,67,0.15);
+    border: 1px solid rgba(212,168,67,0.4);
+    color: var(--pale-gold);
+    padding: 4px 14px;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+
+  /* ===== ITINERARY SECTION ===== */
+  .itinerary-section {
+    background: var(--light-cream);
+    padding: 50px 40px;
+    position: relative;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .section-header::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    transform: translateY(-50%);
+  }
+
+  .section-header h2 {
+    background: var(--light-cream);
+    display: inline-block;
+    padding: 0 24px;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    color: var(--indigo);
+    position: relative;
+  }
+
+  .section-header .section-en {
+    font-size: 11px;
+    letter-spacing: 0.4em;
+    color: #999;
+    margin-top: 4px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+  }
+
+  /* DAY CARDS */
+  .day-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .day-card {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 0;
+    border: 1px solid rgba(26,39,68,0.12);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+  }
+
+  .day-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(26,39,68,0.12);
+  }
+
+  .day-card-date {
+    background: var(--indigo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .day-card-date::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 8px,
+      rgba(255,255,255,0.02) 8px,
+      rgba(255,255,255,0.02) 9px
+    );
+  }
+
+  .day-card:nth-child(1) .day-card-date { background: #1a2744; }
+  .day-card:nth-child(2) .day-card-date { background: #1e3a5a; }
+  .day-card:nth-child(3) .day-card-date { background: #2d5c6a; }
+  .day-card:nth-child(4) .day-card-date { background: #3a5a3a; }
+  .day-card:nth-child(5) .day-card-date { background: #5a3a2a; }
+
+  .day-label {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--pale-gold);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    margin-bottom: 4px;
+  }
+  .day-number {
+    font-size: 38px;
+    font-weight: 900;
+    color: white;
+    line-height: 1;
+    font-family: 'Noto Serif TC', serif;
+  }
+  .day-month {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.1em;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+
+  /* Day illustration icon */
+  .day-icon {
+    margin-top: 10px;
+    font-size: 26px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .day-card-content {
+    padding: 24px 28px;
+  }
+
+  .day-card-content h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--indigo);
+    letter-spacing: 0.08em;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .day-card-content h3::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(26,39,68,0.15), transparent);
+  }
+
+  .activity-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .activity-item {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 10px;
+    align-items: start;
+  }
+
+  .activity-time {
+    font-size: 11px;
+    color: var(--vermillion);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding-top: 2px;
+    border-right: 2px solid rgba(192,57,43,0.2);
+    padding-right: 10px;
+    text-align: right;
+  }
+
+  .activity-desc {
+    font-size: 13.5px;
+    color: #444;
+    line-height: 1.7;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+  }
+
+  .day-return-badge {
+    display: block;
+    text-align: center;
+    background: rgba(192,57,43,0.18);
+    border: 1px solid rgba(192,57,43,0.6);
+    color: #e8a090;
+    font-size: 10px;
+    padding: 3px 6px;
+    letter-spacing: 0.3em;
+    font-weight: 700;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-top: 8px;
+  }
+
+  .highlight-pill {
+    display: inline-block;
+    background: linear-gradient(135deg, #fff3cd, #ffe8a0);
+    border: 1px solid var(--gold);
+    color: #7a5a00;
+    font-size: 11px;
+    padding: 2px 10px;
+    margin-left: 6px;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+
+  /* ===== FEATURES SECTION ===== */
+  .features-section {
+    background: var(--indigo);
+    padding: 50px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .features-section::before {
+    content: '旅';
+    position: absolute;
+    left: -30px;
+    bottom: -40px;
+    font-size: 300px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.02);
+    pointer-events: none;
+    font-family: 'Noto Serif TC', serif;
+  }
+
+  .features-section .section-header h2 {
+    background: var(--indigo);
+    color: var(--pale-gold);
+  }
+  .features-section .section-header::before {
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .feature-card {
+    border: 1px solid rgba(212,168,67,0.2);
+    padding: 28px 22px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: rgba(255,255,255,0.03);
+  }
+
+  .feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .feature-card:hover::before { opacity: 1; }
+  .feature-card:hover { background: rgba(255,255,255,0.06); }
+
+  .feature-icon {
+    font-size: 36px;
+    margin-bottom: 14px;
+    display: block;
+    filter: drop-shadow(0 2px 8px rgba(212,168,67,0.3));
+  }
+
+  .feature-title {
+    color: var(--pale-gold);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    margin-bottom: 10px;
+  }
+
+  .feature-desc {
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
+    line-height: 1.8;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+  }
+
+  /* ===== LOCATIONS STRIP ===== */
+  .locations-strip {
+    background: var(--vermillion);
+    padding: 18px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .location-item {
+    color: white;
+    font-size: 13px;
+    letter-spacing: 0.25em;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Noto Serif TC', serif;
+  }
+
+  .location-sep {
+    color: rgba(255,255,255,0.4);
+    font-size: 18px;
+  }
+
+  /* ===== REGISTRATION SECTION ===== */
+  .registration-section {
+    background: var(--cream);
+    padding: 50px 40px;
+    position: relative;
+  }
+
+  /* Japanese pattern border */
+  .registration-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 6px;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--indigo) 0, var(--indigo) 10px,
+      var(--gold) 10px, var(--gold) 20px,
+      var(--vermillion) 20px, var(--vermillion) 30px,
+      var(--gold) 30px, var(--gold) 40px
+    );
+  }
+
+  .reg-inner {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .reg-inner h2 {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    color: var(--indigo);
+    margin-bottom: 8px;
+  }
+
+  .reg-inner .reg-sub {
+    font-size: 13px;
+    color: #888;
+    letter-spacing: 0.2em;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+  .reg-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+
+  .reg-detail-item {
+    background: white;
+    border: 1px solid rgba(26,39,68,0.1);
+    padding: 16px 20px;
+    text-align: left;
+  }
+
+  .reg-detail-label {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--vermillion);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  .reg-detail-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--indigo);
+    letter-spacing: 0.05em;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: var(--indigo);
+    color: var(--pale-gold);
+    padding: 16px 50px;
+    font-size: 16px;
+    letter-spacing: 0.3em;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .cta-button::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border: 1px solid rgba(212,168,67,0.3);
+  }
+
+  .cta-button:hover {
+    background: var(--vermillion);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(192,57,43,0.3);
+  }
+
+  /* ===== CONTACT SECTION ===== */
+  .contact-section {
+    background: var(--indigo);
+    padding: 40px 40px;
+    border-top: 1px solid rgba(212,168,67,0.2);
+  }
+
+  .contact-inner {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .contact-org-name {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--pale-gold);
+    letter-spacing: 0.08em;
+    line-height: 1.3;
+  }
+
+  .contact-org-en {
+    font-size: 13px;
+    letter-spacing: 0.45em;
+    color: var(--gold);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+
+  .contact-social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 12px;
+  }
+
+  .social-link {
+    font-size: 12px;
+    color: rgba(212,168,67,0.7);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .social-link:hover {
+    color: var(--pale-gold);
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.75);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
+  }
+
+  .contact-icon {
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  @media (max-width: 640px) {
+    .contact-inner { grid-template-columns: 1fr; gap: 20px; }
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--deep-navy);
+    padding: 30px 40px;
+    text-align: center;
+    border-top: 3px solid var(--gold);
+  }
+
+  footer p {
+    color: rgba(255,255,255,0.4);
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+  }
+
+  .footer-logo {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--pale-gold);
+    letter-spacing: 0.2em;
+    margin-bottom: 8px;
+    font-family: 'Noto Serif TC', serif;
+  }
+
+  /* ===== DECORATIVE VERTICAL TEXT ===== */
+  .vertical-deco {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: rgba(212,168,67,0.3);
+    font-family: 'Noto Serif TC', serif;
+    pointer-events: none;
+  }
+
+  /* ===== JAPANESE PATTERN SVG ===== */
+  .seigaiha-border {
+    height: 40px;
+    background: var(--indigo);
+    overflow: hidden;
+  }
+
+  /* ===== ANIMATIONS ===== */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-title-block {
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  .day-card {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+  }
+  .day-card:nth-child(1) { animation-delay: 0.1s; }
+  .day-card:nth-child(2) { animation-delay: 0.2s; }
+  .day-card:nth-child(3) { animation-delay: 0.3s; }
+  .day-card:nth-child(4) { animation-delay: 0.4s; }
+  .day-card:nth-child(5) { animation-delay: 0.5s; }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 640px) {
+    .intro-grid { grid-template-columns: 1fr; }
+    .features-grid { grid-template-columns: 1fr 1fr; }
+    .day-card { grid-template-columns: 80px 1fr; }
+    .reg-details { grid-template-columns: 1fr; }
+    .hero-sky { padding: 30px 20px 0; }
+    .day-card-content { padding: 18px; }
+    .intro-section, .itinerary-section, .features-section, .registration-section { padding: 30px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<div class="hero">
+  <div class="hero-sky">
+
+    <!-- Stars -->
+    <div class="stars">
+      <div class="star" style="width:2px;height:2px;top:8%;left:12%;animation-delay:0.5s"></div>
+      <div class="star" style="width:3px;height:3px;top:15%;left:25%;animation-delay:1.2s"></div>
+      <div class="star" style="width:2px;height:2px;top:6%;left:40%;animation-delay:0.8s"></div>
+      <div class="star" style="width:2px;height:2px;top:18%;left:55%;animation-delay:1.8s"></div>
+      <div class="star" style="width:3px;height:3px;top:10%;left:70%;animation-delay:0.3s"></div>
+      <div class="star" style="width:2px;height:2px;top:20%;left:82%;animation-delay:2.1s"></div>
+      <div class="star" style="width:2px;height:2px;top:5%;left:90%;animation-delay:0.9s"></div>
+      <div class="star" style="width:1px;height:1px;top:12%;left:60%;animation-delay:1.5s"></div>
+    </div>
+
+    <!-- Sun -->
+    <div class="sun">
+      <div class="sun-circle"></div>
+    </div>
+
+    <!-- Mountains SVG -->
+    <div class="mountains">
+      <svg class="mountain-svg" viewBox="0 0 900 280" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Far mountains -->
+        <polygon points="0,280 200,80 400,280" fill="#4a7a6a" opacity="0.35"/>
+        <polygon points="150,280 380,40 610,280" fill="#3a6a5a" opacity="0.4"/>
+        <!-- Snow cap -->
+        <polygon points="330,60 380,40 430,60 415,58 380,48 345,58" fill="white" opacity="0.7"/>
+
+        <polygon points="500,280 700,90 900,280" fill="#2d5a4a" opacity="0.45"/>
+        <!-- Mid mountains -->
+        <polygon points="0,280 120,140 260,280" fill="#1e4a3a" opacity="0.6"/>
+        <polygon points="60,280 200,120 340,280" fill="#1a3a30" opacity="0.7"/>
+        <!-- Snow cap mid -->
+        <polygon points="165,130 200,120 235,130 220,128 200,122 180,128" fill="white" opacity="0.6"/>
+
+        <polygon points="600,280 760,110 920,280" fill="#1e3a30" opacity="0.6"/>
+        <!-- Front mountains -->
+        <polygon points="0,280 80,200 180,280" fill="#0d2418" opacity="0.8"/>
+        <polygon points="700,280 820,180 940,280" fill="#0d2418" opacity="0.8"/>
+        <!-- Forest silhouette -->
+        <path d="M0,280 Q30,250 60,260 Q90,240 120,255 Q150,235 180,248 Q210,230 240,245 Q270,228 300,242 Q330,225 360,238 Q390,222 420,235 Q450,218 480,232 Q510,215 540,229 Q570,212 600,226 Q630,209 660,223 Q690,206 720,220 Q750,203 780,217 Q810,200 840,215 Q870,198 900,212 L900,280 Z" fill="#061810" opacity="0.9"/>
+        <!-- Water/ground -->
+        <path d="M0,275 Q225,265 450,272 Q675,280 900,270 L900,280 L0,280 Z" fill="#0d2818" opacity="0.7"/>
+      </svg>
+    </div>
+
+    <!-- Clouds -->
+    <div class="cloud-layer">
+      <div class="cloud" style="width:140px;height:22px;bottom:40px;left:5%;animation-duration:35s;opacity:0.85">
+        <div style="position:absolute;width:55px;height:40px;background:rgba(255,255,255,0.85);border-radius:50%;top:-18px;left:15px"></div>
+        <div style="position:absolute;width:35px;height:30px;background:rgba(255,255,255,0.85);border-radius:50%;top:-12px;left:50px"></div>
+      </div>
+      <div class="cloud" style="width:100px;height:18px;bottom:20px;left:30%;animation-duration:55s;animation-delay:-15s;opacity:0.7">
+        <div style="position:absolute;width:40px;height:32px;background:rgba(255,255,255,0.85);border-radius:50%;top:-14px;left:10px"></div>
+      </div>
+      <div class="cloud" style="width:120px;height:20px;bottom:50px;left:60%;animation-duration:45s;animation-delay:-25s;opacity:0.75">
+        <div style="position:absolute;width:48px;height:36px;background:rgba(255,255,255,0.85);border-radius:50%;top:-16px;left:12px"></div>
+        <div style="position:absolute;width:30px;height:26px;background:rgba(255,255,255,0.85);border-radius:50%;top:-10px;left:45px"></div>
+      </div>
+    </div>
+
+    <!-- Title Block -->
+    <div class="hero-title-block">
+      <p class="hero-subtitle-top">✦ 2026 自主探索 ✦</p>
+      <h1 class="hero-main-title">夏日<span>探旅</span></h1>
+      <p class="hero-en-title">SUMMER ADVENTURE CAMP</p>
+      <div class="date-badge">
+        <span>七月十三日</span>
+        <span style="opacity:0.5">—</span>
+        <span>七月十七日</span>
+        <span style="opacity:0.5;margin:0 4px">｜</span>
+        <span>兩日台北＋三天兩夜嘉義</span>
+      </div>
+      <div style="margin-top:18px;">
+        <a href="https://forms.gle/qfv8psZNcryZVUr86" target="_blank"
+           style="display:inline-block;color:#f0d080;font-family:'Noto Sans TC',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.25em;border:1px solid rgba(212,168,67,0.7);padding:8px 26px;border-radius:2px;text-decoration:none;transition:all 0.25s ease;background:rgba(13,27,53,0.75);backdrop-filter:blur(6px);box-shadow:0 2px 12px rgba(0,0,0,0.3);"
+           onmouseover="this.style.background='rgba(13,27,53,0.92)';this.style.borderColor='#d4a843';this.style.color='#fff';"
+           onmouseout="this.style.background='rgba(13,27,53,0.75)';this.style.borderColor='rgba(212,168,67,0.7)';this.style.color='#f0d080';">
+          立即報名 &rarr;
+        </a>
+      </div>
+    </div>
+
+  </div><!-- /.hero-sky -->
+</div><!-- /.hero -->
+
+<!-- Pattern border -->
+<div class="deco-border-top"></div>
+
+<!-- ===== INTRO ===== -->
+<div class="intro-section">
+  <div class="page-wrapper">
+    <div class="intro-grid">
+      <div class="stamp-mark">
+        <div class="stamp-circle">
+          <span class="stamp-year">2026</span>
+          <span class="stamp-text">夏令營</span>
+          <span class="stamp-year">SUMMER</span>
+        </div>
+      </div>
+      <div class="intro-text">
+        <h2>孩子主導・自由探索・真實體驗</h2>
+        <p>
+          這不只是一趟旅行，而是一場由孩子們共同設計的冒險。<br>
+          從計畫討論到實際出走，每個決定都由孩子們自己做主。<br>
+          老師在旁引導，讓孩子學習溝通、合作與解決問題的能力。
+        </p>
+        <div class="intro-tags">
+          <span class="tag">自主學習</span>
+          <span class="tag">團隊合作</span>
+          <span class="tag">文化體驗</span>
+          <span class="tag">自然探索</span>
+          <span class="tag">小學生適齡</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== LETTER TO PARENTS ===== -->
+<div style="background:var(--light-cream);padding:56px 0 60px;position:relative;overflow:hidden;">
+  <!-- decorative background kanji -->
+  <div style="position:absolute;right:-30px;top:-20px;font-size:260px;font-weight:900;color:rgba(26,39,68,0.03);font-family:'Noto Serif TC',serif;pointer-events:none;line-height:1;">旅</div>
+
+  <div class="page-wrapper" style="position:relative;z-index:1;">
+
+    <!-- Section title -->
+    <div class="section-header" style="margin-bottom:36px;">
+      <h2 style="background:var(--light-cream);">致家長的一封信</h2>
+      <p class="section-en">A NOTE TO PARENTS</p>
+    </div>
+
+    <!-- Tent header -->
+    <div style="text-align:center;margin-bottom:32px;">
+      <span style="font-size:15px;font-weight:700;letter-spacing:0.15em;color:var(--indigo);font-family:'Noto Serif TC',serif;border-bottom:2px solid var(--gold);padding-bottom:6px;">
+        ⛺️ 過夜營挑戰｜離開父母的羽翼，是一堂沒有課本的「生活自理與人際溝通課」
+      </span>
+    </div>
+
+    <!-- Main letter card -->
+    <div style="background:white;border:1px solid rgba(26,39,68,0.1);padding:40px 44px;line-height:2.1;font-family:'Noto Sans TC',sans-serif;font-size:14.5px;color:#3a3a3a;font-weight:300;position:relative;">
+
+      <!-- Red accent line -->
+      <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(180deg,var(--vermillion),var(--gold));border-radius:0;"></div>
+
+      <p style="margin-bottom:1.6em;">
+        我知道，要把孩子交給我們帶去外縣市過夜，爸爸媽媽心裡一定會有很多的捨不得與擔憂。「東西會不會忘記拿？」「衣服會不會亂塞？」「跟別人意見不合、吵架了怎麼辦？」
+      </p>
+      <p style="margin-bottom:1.6em;">
+        但親愛的家長，這正是我們堅持舉辦過夜營，並且加入「孩子主導」元素的原因。這五天的夏日探旅（兩日台北＋三天兩夜嘉義高鐵遠行），我們要把成長的發言權，交還到孩子手上。
+      </p>
+
+      <!-- Block: 收行李 -->
+      <div style="margin:28px 0;padding:20px 24px;background:var(--light-cream);border-left:3px solid var(--gold);">
+        <p style="font-weight:700;font-size:15px;color:var(--indigo);letter-spacing:0.05em;margin-bottom:10px;font-family:'Noto Serif TC',serif;">🎒 真正的獨立，從「收行李」就已經開始</p>
+        <p>這趟旅程的挑戰，在出發前就啟動了！我們鼓勵孩子「自己的行李自己整理」。到了營隊，沒有人會跟在後面幫忙提水壺、收外套；搭乘高鐵南下時，自己的物品必須自己看顧。如果忘記帶東西怎麼辦？太棒了！這正是他們體驗「自然後果」，並練習自己想辦法解決問題的最佳時機。</p>
+      </div>
+
+      <!-- Block: 人際考驗 -->
+      <div style="margin:28px 0;padding:20px 24px;background:var(--light-cream);border-left:3px solid var(--teal);">
+        <p style="font-weight:700;font-size:15px;color:var(--indigo);letter-spacing:0.05em;margin-bottom:10px;font-family:'Noto Serif TC',serif;">💬 24小時不斷電的「人際真實考驗」</p>
+        <p style="margin-bottom:0.8em;">白天一起在奮起湖山城走跳、一起在洲南鹽場體驗，晚上還要跟同儕睡在同一個房間，這跟平時去學校上課幾個小時完全不同。</p>
+        <p>行程中一定會有摩擦：Day 2 的自主出遊要去哪裡？遇到不同意見怎麼協調？在夜市闖關時，預算要怎麼分配？團隊生活裡充滿了需要妥協與溝通的時刻。當孩子們出現情緒卡點、彼此有隔閡時，我們老師不會急著當裁判，而是會坐下來，陪伴他們梳理內心，引導他們學會表達自己、同理他人，溫柔地幫他們解開情緒的結。</p>
+      </div>
+
+      <!-- Block: 為決定負責 -->
+      <div style="margin:28px 0;padding:20px 24px;background:var(--light-cream);border-left:3px solid var(--sage);">
+        <p style="font-weight:700;font-size:15px;color:var(--indigo);letter-spacing:0.05em;margin-bottom:10px;font-family:'Noto Serif TC',serif;">🛤️ 學習為自己的決定負責</p>
+        <p>這不只是一趟旅行，更是一場由孩子們共同設計的冒險。從一開始的破冰討論、分配工作，到實際踏上嘉義的土地，我們老師會退居幕後，把舞台讓給孩子。</p>
+      </div>
+
+      <!-- Closing -->
+      <p style="margin-top:1.6em;">
+        放手讓孩子去嘗試吧！不用擔心他們會做不好，因為我們團隊會一直在旁邊安靜地看著、穩穩地接住他們。當孩子拖著行李，帶著滿滿的回憶與一點點曬黑的臉龐回到台北時，相信我，您一定會看見他們眼神中，那份屬於小小背包客的<strong style="color:var(--indigo);">自信與光芒</strong>！
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Seigaiha (wave scale) border -->
+<div style="background:var(--indigo);line-height:0;overflow:hidden;height:30px">
+  <svg viewBox="0 0 900 30" xmlns="http://www.w3.org/2000/svg" width="100%" height="30" preserveAspectRatio="none">
+    <defs>
+      <pattern id="seigaiha" x="0" y="0" width="60" height="30" patternUnits="userSpaceOnUse">
+        <ellipse cx="30" cy="30" rx="28" ry="22" fill="none" stroke="rgba(212,168,67,0.25)" stroke-width="1.5"/>
+        <ellipse cx="0" cy="30" rx="28" ry="22" fill="none" stroke="rgba(212,168,67,0.25)" stroke-width="1.5"/>
+        <ellipse cx="60" cy="30" rx="28" ry="22" fill="none" stroke="rgba(212,168,67,0.25)" stroke-width="1.5"/>
+        <ellipse cx="15" cy="60" rx="28" ry="22" fill="none" stroke="rgba(212,168,67,0.15)" stroke-width="1"/>
+        <ellipse cx="45" cy="60" rx="28" ry="22" fill="none" stroke="rgba(212,168,67,0.15)" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="900" height="30" fill="url(#seigaiha)"/>
+  </svg>
+</div>
+
+<!-- ===== ITINERARY ===== -->
+<div class="itinerary-section">
+  <div class="page-wrapper">
+    <div class="section-header">
+      <h2>五日行程</h2>
+      <p class="section-en">FIVE-DAY ITINERARY</p>
+    </div>
+
+    <div class="day-cards">
+
+      <!-- Day 1 -->
+      <div class="day-card">
+        <div class="day-card-date">
+          <span class="day-label">DAY 01</span>
+          <span class="day-number">13</span>
+          <span class="day-month">7月</span>
+          <span class="day-icon">🗺️</span>
+          <span class="day-return-badge">日　歸</span>
+        </div>
+        <div class="day-card-content">
+          <h3>認識彼此・探索烏來</h3>
+          <ul class="activity-list">
+            <li class="activity-item">
+              <span class="activity-time">上午</span>
+              <span class="activity-desc">
+                破冰活動，孩子們互相認識。共同討論自主出遊地點，分配各自負責的工作。
+                當意見不同時，老師引導大家溝通協調，達成共識。
+              </span>
+            </li>
+            <li class="activity-item">
+              <span class="activity-time">下午</span>
+              <span class="activity-desc">
+                前往<strong>烏來老街</strong>，進行
+                <span class="highlight-pill">🎯 寶藏獵人 Scavenger Hunt</span>
+                任務挑戰！完成所有關卡即可獲得神秘小獎品。
+              </span>
+            </li>
+            <li class="activity-item">
+              <span class="activity-time">晚上</span>
+              <span class="activity-desc">🏠 夜宿台北，回到溫暖的家。</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="day-card">
+        <div class="day-card-date">
+          <span class="day-label">DAY 02</span>
+          <span class="day-number">14</span>
+          <span class="day-month">7月</span>
+          <span class="day-icon">🧭</span>
+          <span class="day-return-badge">日　歸</span>
+        </div>
+        <div class="day-card-content">
+          <h3>孩子們的自主出遊日</h3>
+          <ul class="activity-list">
+            <li class="activity-item">
+              <span class="activity-time">全天</span>
+              <span class="activity-desc">
+                前往由孩子們自己討論決定的地點！自由活動、戶外探索、一起吃午餐。
+                完全由孩子掌舵的一天，培養真正的自主能力。
+              </span>
+            </li>
+            <li class="activity-item">
+              <span class="activity-time">晚上</span>
+              <span class="activity-desc">🏠 夜宿台北，回到溫暖的家。</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="day-card">
+        <div class="day-card-date">
+          <span class="day-label">DAY 03</span>
+          <span class="day-number">15</span>
+          <span class="day-month">7月</span>
+          <span class="day-icon">🧂</span>
+        </div>
+        <div class="day-card-content">
+          <h3>高鐵南下・洲南鹽場體驗</h3>
+          <ul class="activity-list">
+            <li class="activity-item">
+              <span class="activity-time">上午</span>
+              <span class="activity-desc">
+                自台北搭乘高鐵南下嘉義，前往<strong>洲南鹽場</strong>。
+              </span>
+            </li>
+            <li class="activity-item">
+              <span class="activity-time">下午</span>
+              <span class="activity-desc">
+                鹽田導覽與體驗，搭配趣味手作活動：
+                <span class="highlight-pill">🔮 晶彩瓶安</span>
+                <span class="highlight-pill">🧂 煮鹽DIY</span>
+                或
+                <span class="highlight-pill">❄️ 鹽的降溫魔力</span>
+                <span class="highlight-pill">🍧 炒冰DIY</span>
+              </span>
+            </li>
+            <li class="activity-item">
+              <span class="activity-time">晚上</span>
+              <span class="activity-desc">夜宿嘉義旅館，悠閒享受南台灣的夜晚。</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="day-card">
+        <div class="day-card-date">
+          <span class="day-label">DAY 04</span>
+          <span class="day-number">16</span>
+          <span class="day-month">7月</span>
+          <span class="day-icon">🚂</span>
+        </div>
+        <div class="day-card-content">
+          <h3>奮起湖阿里山小火車之旅</h3>
+          <ul class="activity-list">
+            <li class="activity-item">
+              <span class="activity-time">上午</span>
+              <span class="activity-desc">
+                搭乘火車前往傳說中的<strong>奮起湖</strong>，抵達後進行深度導覽解說，
+                認識阿里山山城的故事與生態。
+              </span>
+            </li>
+            <li class="activity-item">
+              <span class="activity-time">晚上</span>
+              <span class="activity-desc">
+                <span class="highlight-pill">🏮 夜市闖關</span>
+                品嚐在地美食，夜宿嘉義旅館。
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 5 -->
+      <div class="day-card">
+        <div class="day-card-date">
+          <span class="day-label">DAY 05</span>
+          <span class="day-number">17</span>
+          <span class="day-month">7月</span>
+          <span class="day-icon">🏛️</span>
+        </div>
+        <div class="day-card-content">
+          <h3>嘉義市文化巡禮・返回台北</h3>
+          <ul class="activity-list">
+            <li class="activity-item">
+              <span class="activity-time">上午</span>
+              <span class="activity-desc">收拾行李，前往<strong>嘉義市立博物館</strong>，了解嘉義的歷史脈絡。</span>
+            </li>
+            <li class="activity-item">
+              <span class="activity-time">下午</span>
+              <span class="activity-desc">
+                <strong>嘉義舊監獄</strong>歷史導覽，探索這座充滿故事的百年建築。
+                結束後搭乘高鐵返回台北，帶著滿滿回憶回家。
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div><!-- /.day-cards -->
+  </div>
+</div>
+
+<!-- ===== LOCATIONS STRIP ===== -->
+<div class="locations-strip">
+  <span class="location-item">🗾 台北出發</span>
+  <span class="location-sep">›</span>
+  <span class="location-item">🌿 烏來老街</span>
+  <span class="location-sep">›</span>
+  <span class="location-item">🧂 洲南鹽場</span>
+  <span class="location-sep">›</span>
+  <span class="location-item">🚂 奮起湖</span>
+  <span class="location-sep">›</span>
+  <span class="location-item">🏛️ 嘉義市區</span>
+  <span class="location-sep">›</span>
+  <span class="location-item">🏠 返回台北</span>
+</div>
+
+<!-- ===== FEATURES ===== -->
+<div class="features-section">
+  <div class="page-wrapper">
+    <div class="section-header">
+      <h2>營隊特色</h2>
+      <p class="section-en" style="color:rgba(255,255,255,0.3)">CAMP HIGHLIGHTS</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🗣️</span>
+        <div class="feature-title">自主溝通</div>
+        <div class="feature-desc">孩子們自行討論決策，老師在旁引導，培養真正的溝通力與表達力。</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🧳</span>
+        <div class="feature-title">自主規劃</div>
+        <div class="feature-desc">由孩子討論旅程地點、分工合作，體驗完整的旅行規劃流程。</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🌾</span>
+        <div class="feature-title">文化體驗</div>
+        <div class="feature-desc">鹽場工藝、山城導覽、歷史建築，讓台灣文化刻入孩子的心靈。</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🎯</span>
+        <div class="feature-title">任務挑戰</div>
+        <div class="feature-desc">寶藏獵人闖關、DIY體驗，讓學習充滿趣味與成就感。</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🤝</span>
+        <div class="feature-title">同伴羈絆</div>
+        <div class="feature-desc">兩日台北探索＋三天兩夜嘉義過夜共同冒險，在真實挑戰中建立珍貴的友誼。</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🛡️</span>
+        <div class="feature-title">全程陪伴</div>
+        <div class="feature-desc">專業師資全程陪伴，確保每位孩子的安全與成長。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== REGISTRATION ===== -->
+<div class="registration-section">
+  <div class="page-wrapper">
+    <div class="reg-inner">
+      <h2>立即報名</h2>
+      <p class="reg-sub">名額有限，把握孩子成長的珍貴機會</p>
+      <div class="reg-details">
+        <div class="reg-detail-item">
+          <div class="reg-detail-label">活動日期</div>
+          <div class="reg-detail-value">2026 年 7月 13 — 17 日</div>
+        </div>
+        <div class="reg-detail-item">
+          <div class="reg-detail-label">行程天數</div>
+          <div class="reg-detail-value">兩日大台北深度探索＋嘉義三天兩夜過夜營</div>
+        </div>
+        <div class="reg-detail-item">
+          <div class="reg-detail-label">適合對象</div>
+          <div class="reg-detail-value">國小學齡孩童</div>
+        </div>
+        <div class="reg-detail-item">
+          <div class="reg-detail-label">旅程路線</div>
+          <div class="reg-detail-value">台北 → 嘉義 → 台北</div>
+        </div>
+        <div class="reg-detail-item" style="grid-column: 1 / -1;">
+          <div class="reg-detail-label">集合地點</div>
+          <div class="reg-detail-value">🚇 捷運大坪林站 3 號出口</div>
+        </div>
+      </div>
+      <a href="https://forms.gle/qfv8psZNcryZVUr86" target="_blank" class="cta-button">我要報名 →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CONTACT SECTION ===== -->
+<div class="contact-section">
+  <div class="page-wrapper">
+    <div class="contact-inner">
+      <div class="contact-logo-block">
+        <img src="data:image/png;base64,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" alt="童心毓樂探索基地" style="width:90px;height:90px;border-radius:50%;object-fit:cover;margin-bottom:10px;display:block;margin-left:auto;margin-right:auto;">
+        <div class="contact-org-name">童心毓樂探索基地</div>
+        <div class="contact-org-en">BRAINTASTY</div>
+        <div class="contact-social-links">
+          <a href="https://portaly.cc/Braintasty" target="_blank" class="social-link">🔗 portaly.cc/Braintasty</a>
+          <a href="https://www.facebook.com/profile.php?id=100076003150764" target="_blank" class="social-link">📘 Facebook</a>
+          <a href="https://www.instagram.com/braintasy_2021/" target="_blank" class="social-link">📷 Instagram</a>
+        </div>
+      </div>
+      <div class="contact-details">
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <span>新北市新店區中興路三段175號2樓</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <span>(02) 2917-5388</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">💬</span>
+          <span>LINE ID：019tgpuf</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-logo">夏日探旅 2026</div>
+  <p>SUMMER ADVENTURE CAMP ✦ 兩日台北＋三天兩夜嘉義 ✦ 7/13 — 7/17</p>
+  <p style="margin-top:6px;">童心毓樂探索基地 Braintasty ✦ (02) 2917-5388 ✦ LINE：019tgpuf</p>
+</footer>
+
+</body>
+</html>
